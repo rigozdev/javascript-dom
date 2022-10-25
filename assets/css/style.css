@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+
+.img-container{
+    padding: 10px;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    width: 400px;
+    height: 600px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h3{
+    padding: 20px;
+}
+
+.description-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc-list{
+    list-style: none;
+    padding: 0px;
+}
+
+
+.dynamic-content-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.cantidad-input{
+    width: 65%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.color-selector{
+    width: 69%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.price{
+    padding: 5px;
+    width: 65%;
+    margin: 5px;
+}
+
+.button-calcular{
+    padding: 5px;
+    width: 40%;
+    margin: 5px;
+    background-color: steelblue;
+    color: white;
+    border-radius: 2.5px;
+}

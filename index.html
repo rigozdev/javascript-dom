@@ -10,7 +10,29 @@
 <body>
     <article>
         <div class="card">
-            
+            <figure class="img-container">
+                <img src="assets/img/razer-notebook.png" alt="">
+            </figure>
+            <figcaption class="description-container">
+                <h3>Portátil</h3>
+                <ul class="desc-list">
+                    <li>Ram: 32GB DDR5 </li>
+                    <li>Almacenamiento: SSD 1TB</li>
+                    <li>Video: NVIDIA RTX 3080 Ti (16 GB)</li>
+                    <li>Procesador: Intel Core i7-12800H</li>
+                </ul>
+            </figcaption>
+            <article class="dynamic-content-container">
+                <input class="cantidad-input" type="number" placeholder="Cantidad">
+                <select class="color-selector" name="" id="">
+                    <option value="" disabled selected>Color</option>
+                    <option value="black">Negro</option>
+                    <option value="grey">Gris</option>
+                    <option value="white">Blanco</option>
+                </select>
+                <span class="price">Precio: $ 6.599.990	</span>
+                <button class="button-calcular">Calcular Total</button>
+            </article>
         </div>
     </article>
     <script src="app.js"></script>
