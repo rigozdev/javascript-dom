@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +11,9 @@
     <title>Document</title>
 </head>
 <body>
-    <article>
+    <article class="main-container">
+
+        <!-- tarjeta para comprar -->
         <div class="card">
             <figure class="img-container">
                 <img src="assets/img/razer-notebook.png" alt="">
@@ -23,16 +28,38 @@
                 </ul>
             </figcaption>
             <article class="dynamic-content-container">
-                <input class="cantidad-input" type="number" placeholder="Cantidad">
-                <select class="color-selector" name="" id="">
+                <input id="cantidad-laptop" class="cantidad-input" min="1" type="number" placeholder="Cantidad">
+                <select 
+                    class="color-selector" 
+                    id="selector-de-color" 
+                    required>
                     <option value="" disabled selected>Color</option>
                     <option value="black">Negro</option>
                     <option value="grey">Gris</option>
                     <option value="white">Blanco</option>
                 </select>
-                <span class="price">Precio: $ 6.599.990	</span>
-                <button class="button-calcular">Calcular Total</button>
+                <p>Precio: $ <span class="price" id="price-laptop" value="6599990">6599990</span></p>
+                
+                <button class="button-calcular" id="boton-calcular">Calcular Total</button>
             </article>
+        </div>
+
+        <!-- datos recopilados -->
+        <div class="data">
+            <table>
+                <tr>
+                    <td>Precio: <span>$</span></td>
+                    <td id="valor">0</td>
+                </tr>
+                <tr>
+                    <td>Cantidad:</td>
+                    <td id="cantidad">0</td>
+                </tr>
+                <tr>
+                    <td>Color:</td>
+                    <td><div class="color-selected"></div></td>
+                </tr>
+            </table>
         </div>
     </article>
     <script src="app.js"></script>
